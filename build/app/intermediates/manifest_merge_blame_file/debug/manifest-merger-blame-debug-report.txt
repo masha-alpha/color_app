@@ -1,0 +1,136 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.color_change"
+4    android:versionCode="1"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+9        android:targetSdkVersion="31" />
+10    <!--
+11         Flutter needs it to communicate with the running application
+12         to allow setting breakpoints, to provide hot reload, etc.
+13    -->
+14    <uses-permission android:name="android.permission.INTERNET" />
+14-->/home/alpha-masha/Documents/Flutter Projects/color_change/android/app/src/debug/AndroidManifest.xml:6:5-66
+14-->/home/alpha-masha/Documents/Flutter Projects/color_change/android/app/src/debug/AndroidManifest.xml:6:22-64
+15    <uses-permission android:name="android.permission.RECORD_AUDIO" /> <!-- 2. To overcome bind to recognition service failed issue -->
+15-->/home/alpha-masha/Documents/Flutter Projects/color_change/android/app/src/main/AndroidManifest.xml:3:5-71
+15-->/home/alpha-masha/Documents/Flutter Projects/color_change/android/app/src/main/AndroidManifest.xml:3:22-68
+16    <queries>
+16-->/home/alpha-masha/Documents/Flutter Projects/color_change/android/app/src/main/AndroidManifest.xml:5:5-7:15
+17        <package android:name="com.google.android.googlequicksearchbox" />
+17-->/home/alpha-masha/Documents/Flutter Projects/color_change/android/app/src/main/AndroidManifest.xml:6:9-74
+17-->/home/alpha-masha/Documents/Flutter Projects/color_change/android/app/src/main/AndroidManifest.xml:6:18-72
+18    </queries>
+19
+20    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
+20-->[:speech_to_text] /home/alpha-masha/Documents/Flutter Projects/color_change/build/speech_to_text/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-76
+20-->[:speech_to_text] /home/alpha-masha/Documents/Flutter Projects/color_change/build/speech_to_text/intermediates/library_manifest/debug/AndroidManifest.xml:7:22-73
+21    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+21-->[:assets_audio_player] /home/alpha-masha/Documents/Flutter Projects/color_change/build/assets_audio_player/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-77
+21-->[:assets_audio_player] /home/alpha-masha/Documents/Flutter Projects/color_change/build/assets_audio_player/intermediates/library_manifest/debug/AndroidManifest.xml:7:22-74
+22    <uses-permission android:name="android.permission.VIBRATE" />
+22-->[:assets_audio_player] /home/alpha-masha/Documents/Flutter Projects/color_change/build/assets_audio_player/intermediates/library_manifest/debug/AndroidManifest.xml:8:5-66
+22-->[:assets_audio_player] /home/alpha-masha/Documents/Flutter Projects/color_change/build/assets_audio_player/intermediates/library_manifest/debug/AndroidManifest.xml:8:22-63
+23    <uses-permission android:name="android.permission.WAKE_LOCK" />
+23-->[:assets_audio_player] /home/alpha-masha/Documents/Flutter Projects/color_change/build/assets_audio_player/intermediates/library_manifest/debug/AndroidManifest.xml:9:5-68
+23-->[:assets_audio_player] /home/alpha-masha/Documents/Flutter Projects/color_change/build/assets_audio_player/intermediates/library_manifest/debug/AndroidManifest.xml:9:22-65
+24    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+25    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+26    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+27    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+27-->[com.google.android.exoplayer:exoplayer-core:2.17.1] /home/alpha-masha/.gradle/caches/transforms-2/files-2.1/f81d7720190f110f0e5c11d71f550860/jetified-exoplayer-core-2.17.1/AndroidManifest.xml:24:5-79
+27-->[com.google.android.exoplayer:exoplayer-core:2.17.1] /home/alpha-masha/.gradle/caches/transforms-2/files-2.1/f81d7720190f110f0e5c11d71f550860/jetified-exoplayer-core-2.17.1/AndroidManifest.xml:24:22-76
+28
+29    <application
+30        android:name="android.app.Application"
+31        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+31-->[androidx.core:core:1.8.0] /home/alpha-masha/.gradle/caches/transforms-2/files-2.1/8e86e615f21ac3758e97e94e18045107/core-1.8.0/AndroidManifest.xml:24:18-86
+32        android:debuggable="true"
+33        android:icon="@mipmap/ic_launcher"
+34        android:label="color_change" >
+35        <activity
+36            android:name="com.example.color_change.MainActivity"
+37            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+38            android:exported="true"
+39            android:hardwareAccelerated="true"
+40            android:launchMode="singleTop"
+41            android:theme="@style/LaunchTheme"
+42            android:windowSoftInputMode="adjustResize" >
+43
+44            <!--
+45                 Specifies an Android theme to apply to this Activity as soon as
+46                 the Android process has started. This theme is visible to the user
+47                 while the Flutter UI initializes. After that, this theme continues
+48                 to determine the Window background behind the Flutter UI.
+49            -->
+50            <meta-data
+51                android:name="io.flutter.embedding.android.NormalTheme"
+52                android:resource="@style/NormalTheme" />
+53
+54            <intent-filter>
+55                <action android:name="android.intent.action.MAIN" />
+56
+57                <category android:name="android.intent.category.LAUNCHER" />
+58            </intent-filter>
+59        </activity>
+60        <!--
+61             Don't delete the meta-data below.
+62             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+63        -->
+64        <meta-data
+65            android:name="flutterEmbedding"
+66            android:value="2" />
+67
+68        <receiver
+68-->[:assets_audio_player] /home/alpha-masha/Documents/Flutter Projects/color_change/build/assets_audio_player/intermediates/library_manifest/debug/AndroidManifest.xml:12:9-14:39
+69            android:name="com.github.florent37.assets_audio_player.notification.NotificationActionReceiver"
+69-->[:assets_audio_player] /home/alpha-masha/Documents/Flutter Projects/color_change/build/assets_audio_player/intermediates/library_manifest/debug/AndroidManifest.xml:13:13-108
+70            android:exported="true" />
+70-->[:assets_audio_player] /home/alpha-masha/Documents/Flutter Projects/color_change/build/assets_audio_player/intermediates/library_manifest/debug/AndroidManifest.xml:14:13-36
+71        <receiver
+71-->[:assets_audio_player] /home/alpha-masha/Documents/Flutter Projects/color_change/build/assets_audio_player/intermediates/library_manifest/debug/AndroidManifest.xml:15:9-21:20
+72            android:name="com.github.florent37.assets_audio_player.notification.CustomMediaButtonReceiver"
+72-->[:assets_audio_player] /home/alpha-masha/Documents/Flutter Projects/color_change/build/assets_audio_player/intermediates/library_manifest/debug/AndroidManifest.xml:16:13-107
+73            android:exported="true" >
+73-->[:assets_audio_player] /home/alpha-masha/Documents/Flutter Projects/color_change/build/assets_audio_player/intermediates/library_manifest/debug/AndroidManifest.xml:17:13-36
+74            <intent-filter>
+74-->[:assets_audio_player] /home/alpha-masha/Documents/Flutter Projects/color_change/build/assets_audio_player/intermediates/library_manifest/debug/AndroidManifest.xml:18:13-20:29
+75                <action android:name="android.intent.action.MEDIA_BUTTON" />
+75-->[:assets_audio_player] /home/alpha-masha/Documents/Flutter Projects/color_change/build/assets_audio_player/intermediates/library_manifest/debug/AndroidManifest.xml:19:17-77
+75-->[:assets_audio_player] /home/alpha-masha/Documents/Flutter Projects/color_change/build/assets_audio_player/intermediates/library_manifest/debug/AndroidManifest.xml:19:25-74
+76            </intent-filter>
+77        </receiver>
+78
+79        <service
+79-->[:assets_audio_player] /home/alpha-masha/Documents/Flutter Projects/color_change/build/assets_audio_player/intermediates/library_manifest/debug/AndroidManifest.xml:23:9-33:19
+80            android:name="com.github.florent37.assets_audio_player.notification.NotificationService"
+80-->[:assets_audio_player] /home/alpha-masha/Documents/Flutter Projects/color_change/build/assets_audio_player/intermediates/library_manifest/debug/AndroidManifest.xml:24:13-101
+81            android:enabled="true"
+81-->[:assets_audio_player] /home/alpha-masha/Documents/Flutter Projects/color_change/build/assets_audio_player/intermediates/library_manifest/debug/AndroidManifest.xml:25:13-35
+82            android:exported="true" >
+82-->[:assets_audio_player] /home/alpha-masha/Documents/Flutter Projects/color_change/build/assets_audio_player/intermediates/library_manifest/debug/AndroidManifest.xml:26:13-36
+83
+84            <!--
+85            <intent-filter>
+86                <action android:name="android.intent.action.MEDIA_BUTTON" />
+87            </intent-filter>
+88            -->
+89        </service>
+90
+91        <uses-library
+91-->[androidx.window:window:1.0.0-beta04] /home/alpha-masha/.gradle/caches/transforms-2/files-2.1/03c633e46d75bfb21f082f0417f55161/jetified-window-1.0.0-beta04/AndroidManifest.xml:25:9-27:40
+92            android:name="androidx.window.extensions"
+92-->[androidx.window:window:1.0.0-beta04] /home/alpha-masha/.gradle/caches/transforms-2/files-2.1/03c633e46d75bfb21f082f0417f55161/jetified-window-1.0.0-beta04/AndroidManifest.xml:26:13-54
+93            android:required="false" />
+93-->[androidx.window:window:1.0.0-beta04] /home/alpha-masha/.gradle/caches/transforms-2/files-2.1/03c633e46d75bfb21f082f0417f55161/jetified-window-1.0.0-beta04/AndroidManifest.xml:27:13-37
+94        <uses-library
+94-->[androidx.window:window:1.0.0-beta04] /home/alpha-masha/.gradle/caches/transforms-2/files-2.1/03c633e46d75bfb21f082f0417f55161/jetified-window-1.0.0-beta04/AndroidManifest.xml:28:9-30:40
+95            android:name="androidx.window.sidecar"
+95-->[androidx.window:window:1.0.0-beta04] /home/alpha-masha/.gradle/caches/transforms-2/files-2.1/03c633e46d75bfb21f082f0417f55161/jetified-window-1.0.0-beta04/AndroidManifest.xml:29:13-51
+96            android:required="false" />
+96-->[androidx.window:window:1.0.0-beta04] /home/alpha-masha/.gradle/caches/transforms-2/files-2.1/03c633e46d75bfb21f082f0417f55161/jetified-window-1.0.0-beta04/AndroidManifest.xml:30:13-37
+97    </application>
+98
+99</manifest>
